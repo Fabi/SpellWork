@@ -1,11 +1,13 @@
 ﻿using SpellWork.Extensions;
 using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace SpellWork.Forms
 {
     public sealed partial class FormCalculateFlags : Form
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public uint Flags { get; private set; }
 
         public FormCalculateFlags(Type data, uint value, string remove)
